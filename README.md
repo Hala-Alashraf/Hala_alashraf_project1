@@ -11,19 +11,21 @@ The app displays a curated list of natural places across Saudi Arabia — mounta
 ### 1. Intro Screen
 A full-screen welcome view with a background image and the headline "Explore Your Favorite **Rehlah**" (the app name highlighted in green), followed by a subtitle and a button leading into the app.
 
-<img src="screenshots/simulator_screenshot_A1D666B8-A339-488A-AE08-724FF8164422.png" width="250" style="border-radius: 20px;"/>
+<img src="screenshots/Screenshot 1448-03-17 at 1.20.54 PM.png" width="250" style="border-radius: 20px;"/>
 
 ### 2. Home Screen
 The main screen — displays the app name ("Rehlah") in the `AppBar`, a search bar, horizontally scrollable city filter chips, and a scrollable list of destination cards. Each card shows the place's image, name, and city, with an explore button that navigates to the details screen.
 
 | | |
 |---|---|
-| <img src="screenshots/simulator_screenshot_422A9090-AFF9-448F-BD6D-701FD063216E.png" width="250" style="border-radius: 20px;"/> | <img src="screenshots/simulator_screenshot_5B2CE143-44A3-4199-85EF-4EA86CB54237.png" width="250" style="border-radius: 20px;"/> |
+| <img src="screenshots/Screenshot 1448-03-17 at 1.20.28 PM.png" width="250" style="border-radius: 20px;"/> | <img src="screenshots/Screenshot 1448-03-17 at 1.20.36 PM.png" width="250" style="border-radius: 20px;"/> |
 
 ### 3. Details Screen
 A custom "Screen 2 — Your Choice" implementation: a large hero image with the place name and location overlaid, and a scrollable description panel below.
 
-<img src="screenshots/simulator_screenshot_754512B3-A2FF-4CB9-ABE1-332AC3F9C980.png" width="250" style="border-radius: 20px;"/>
+| | |
+|---|---|
+| <img src="screenshots/Screenshot 1448-03-17 at 1.20.08 PM.png" width="250" style="border-radius: 20px;"/> | <img src="screenshots/Screenshot 1448-03-17 at 1.20.46 PM.png" width="250" style="border-radius: 20px;"/> |
 
 ## Widgets Used
 
