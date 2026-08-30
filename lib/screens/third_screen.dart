@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:hala_alashraf_project1/data/places_data.dart';
@@ -30,12 +29,11 @@ class ThirdScreen extends StatelessWidget {
       ),
       body: Stack(
         children: [
-          
           Positioned(
             top: 0,
             left: 0,
             right: 0,
-            height: height*0.53,
+            height: height * 0.53,
             child: ClipRRect(
               borderRadius: const BorderRadius.vertical(
                 bottom: Radius.circular(30),
@@ -53,7 +51,7 @@ class ThirdScreen extends StatelessWidget {
                       children: [
                         Text(
                           place["name"],
-                          style:GoogleFonts.poppins(
+                          style: GoogleFonts.poppins(
                             fontSize: 26,
                             fontWeight: FontWeight.bold,
                             color: Color(0xFFFFFFFF),
@@ -70,9 +68,7 @@ class ThirdScreen extends StatelessWidget {
                             const SizedBox(width: 4),
                             Text(
                               place["city"],
-                              style: const TextStyle(
-                                color: Color(0xFFE8EDE9),
-                              ),
+                              style: const TextStyle(color: Color(0xFFE8EDE9)),
                             ),
                           ],
                         ),
@@ -84,7 +80,6 @@ class ThirdScreen extends StatelessWidget {
             ),
           ),
 
-          
           Positioned(
             top: 400,
             left: 0,
@@ -93,9 +88,7 @@ class ThirdScreen extends StatelessWidget {
             child: Container(
               decoration: const BoxDecoration(
                 color: Color(0xFFFFFFFF),
-                borderRadius: BorderRadius.vertical(
-                  top: Radius.circular(28),
-                ),
+                borderRadius: BorderRadius.vertical(top: Radius.circular(28)),
               ),
               padding: const EdgeInsets.fromLTRB(20, 20, 20, 20),
               child: SingleChildScrollView(
@@ -121,9 +114,7 @@ class ThirdScreen extends StatelessWidget {
               width: 5,
               decoration: const BoxDecoration(
                 color: Color(0xFF176B3A),
-                borderRadius: BorderRadius.all(
-                  Radius.circular(25),
-                ),
+                borderRadius: BorderRadius.all(Radius.circular(25)),
               ),
               child: Text(
                 "See Directions",
@@ -133,7 +124,7 @@ class ThirdScreen extends StatelessWidget {
                 ),
               ),
             ),
-          )
+          ),
         ],
       ),
     );

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:hala_alashraf_project1/data/places_data.dart';
+
 import 'second_screen.dart';
 
 class FirstScreen extends StatelessWidget {
@@ -23,27 +24,46 @@ class FirstScreen extends StatelessWidget {
           ),
 
           Positioned(
-            top: 170,
+            top: 75,
             left: 0,
             right: 0,
             child: Column(
               children: [
-                Text(
-                  "Explore Your Favorite Journey",
-                  textAlign: TextAlign.center,
-                  style: GoogleFonts.poppins(
-                    fontSize: 40,
-                    fontWeight: FontWeight.bold,
-                    color: const Color(0xFFFFFFFF),
+                SizedBox(height: 100),
+                Text.rich(
+                  TextSpan(
+                    text: "Explore Your Favorite ",
+                    style: GoogleFonts.poppins(
+                      fontSize: 40,
+                      fontWeight: FontWeight.bold,
+                      color: Colors.white,
+                    ),
+                    children: [
+                      TextSpan(
+                        text: "Rehlah",
+                        style: GoogleFonts.poppins(
+                          fontSize: 40,
+                          fontWeight: FontWeight.bold,
+                          color: const Color.fromARGB(255, 26, 142, 78),
+                          shadows: const [
+                            Shadow(color: Colors.black45, blurRadius: 6),
+                          ],
+                        ),
+                      ),
+                    ],
                   ),
+                  textAlign: TextAlign.center,
                 ),
                 SizedBox(height: 445),
                 Text(
-                  "Discover new destinations and experience more every day.",
+                  "Discover new destinations and experience more every day",
                   textAlign: TextAlign.center,
                   style: GoogleFonts.montserrat(
                     fontSize: 20,
                     color: const Color(0xFFFFFFFF),
+                    shadows: const [
+                      Shadow(color: Colors.black45, blurRadius: 10),
+                    ],
                   ),
                 ),
               ],
@@ -80,6 +100,3 @@ class FirstScreen extends StatelessWidget {
     );
   }
 }
-
-
-

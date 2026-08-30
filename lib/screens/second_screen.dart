@@ -1,55 +1,52 @@
-
-
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:hala_alashraf_project1/data/places_data.dart';
+
 import 'third_screen.dart';
-
-
 
 class SecondScreen extends StatelessWidget {
   const SecondScreen({super.key});
 
   @override
-  Widget build(BuildContext context) { 
+  Widget build(BuildContext context) {
     double width = MediaQuery.sizeOf(context).width;
     double height = MediaQuery.sizeOf(context).height;
     return Scaffold(
       backgroundColor: const Color(0xFFFAF7F2),
 
-     appBar: AppBar(
-  backgroundColor: const Color(0xFFFAF7F2),
-  automaticallyImplyLeading: false,
-  actions: [
-    Padding(
-      padding: const EdgeInsets.only(right: 27, bottom: 10),
-      child: Row(
-        children: [
-          Icon(
-            Icons.account_circle,
-            size: 55,
-            color: const Color(0xFF176B3A),
-          ),
-          SizedBox(width: 107),
-          Text(
-            "Rehlah",
-            style: GoogleFonts.poppins(
-              fontSize: 20,
-              fontWeight: FontWeight.bold,
-              color: const Color(0xFF0D4828),
+      appBar: AppBar(
+        backgroundColor: const Color(0xFFFAF7F2),
+        automaticallyImplyLeading: false,
+        actions: [
+          Padding(
+            padding: const EdgeInsets.only(right: 27, bottom: 10),
+            child: Row(
+              children: [
+                Icon(
+                  Icons.account_circle,
+                  size: 55,
+                  color: const Color(0xFF176B3A),
+                ),
+                SizedBox(width: 107),
+                Text(
+                  "Rehlah",
+                  style: GoogleFonts.poppins(
+                    fontSize: 20,
+                    fontWeight: FontWeight.bold,
+                    color: const Color(0xFF0D4828),
+                  ),
+                ),
+                SizedBox(width: 106),
+                Icon(
+                  Icons.notifications_none_outlined,
+                  size: 30,
+                  color: const Color(0xFF176B3A),
+                ),
+              ],
             ),
-          ),
-          SizedBox(width: 106),
-          Icon(
-            Icons.notifications_none_outlined,
-            size: 30,
-            color: const Color(0xFF176B3A),
           ),
         ],
       ),
-    ),
-  ],
-),
 
       body: ListView(
         children: [
@@ -64,17 +61,11 @@ class SecondScreen extends StatelessWidget {
             ),
             child: Row(
               children: [
-                Icon(
-                  Icons.search,
-                  size: 30,
-                  color: const Color(0xFF7C8580),
-                ),
+                Icon(Icons.search, size: 30, color: const Color(0xFF7C8580)),
                 SizedBox(width: 10),
                 Text(
                   "Search destination..",
-                  style: TextStyle(
-                    color: const Color(0xFF9A9F9B),
-                  ),
+                  style: TextStyle(color: const Color(0xFF9A9F9B)),
                 ),
               ],
             ),
@@ -270,8 +261,8 @@ class SecondScreen extends StatelessWidget {
           //cards:
           ...places.map(
             (place) => Container(
-              width: width*0.9,
-              height: height*0.23,
+              width: width * 0.9,
+              height: height * 0.23,
               margin: const EdgeInsets.all(8),
               padding: const EdgeInsets.all(3.5),
               decoration: BoxDecoration(
@@ -369,4 +360,3 @@ class SecondScreen extends StatelessWidget {
     );
   }
 }
-
