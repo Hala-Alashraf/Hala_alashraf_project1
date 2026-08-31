@@ -1,10 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:hala_alashraf_project1/Models/place_model.dart';
 import 'package:hala_alashraf_project1/data/places_data.dart';
 
 class ThirdScreen extends StatelessWidget {
-  final Map<String, dynamic> place;
+   final PlaceModel place;
+  
   const ThirdScreen({super.key, required this.place});
+  
 
   @override
   Widget build(BuildContext context) {
@@ -41,7 +44,7 @@ class ThirdScreen extends StatelessWidget {
               child: Stack(
                 fit: StackFit.expand,
                 children: [
-                  Image.asset(place["images"][0], fit: BoxFit.cover),
+                  Image.asset(place.images[0], fit: BoxFit.cover),
                   Positioned(
                     left: 20,
                     right: 20,
@@ -50,7 +53,7 @@ class ThirdScreen extends StatelessWidget {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Text(
-                          place["name"],
+                          place.name,
                           style: GoogleFonts.poppins(
                             fontSize: 26,
                             fontWeight: FontWeight.bold,
@@ -67,7 +70,7 @@ class ThirdScreen extends StatelessWidget {
                             ),
                             const SizedBox(width: 4),
                             Text(
-                              place["city"],
+                              place.city,
                               style: const TextStyle(color: Color(0xFFE8EDE9)),
                             ),
                           ],
@@ -93,7 +96,7 @@ class ThirdScreen extends StatelessWidget {
               padding: const EdgeInsets.fromLTRB(20, 20, 20, 20),
               child: SingleChildScrollView(
                 child: Text(
-                  place["description"],
+                  place.description,
                   style: GoogleFonts.poppins(
                     fontSize: 17,
                     height: 1.6,
